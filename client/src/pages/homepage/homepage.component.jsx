@@ -1,10 +1,13 @@
-import Direcotry from "../../components/directory/directory.component";
-import { HompageContainer } from "./homepage.styles";
+import React from "react";
 
-const Homepage = () => (
-  <HompageContainer className="homepageContainer">
-    <Direcotry />
-  </HompageContainer>
+import Directory from "../../components/directory/directory.component";
+
+import { HomePageContainer } from "./homepage.styles";
+
+const HomePage = () => (
+  <HomePageContainer>
+    <Directory />
+  </HomePageContainer>
 );
 
-export default Homepage;
+export default HomePage;
