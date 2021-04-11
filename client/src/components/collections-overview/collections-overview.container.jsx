@@ -1,4 +1,3 @@
-// containers don't render anything. just use for passing props
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { compose } from "redux";
@@ -11,7 +10,7 @@ const mapStateToProps = createStructuredSelector({
   isLoading: selectIsCollectionFetching,
 });
 
-// without compose
+// example: without compose
 // const CollectionsOverviewContainer = connect(mapStateToProps)(WithSpinner(CollectionsOverview))
 
 const CollectionsOverviewContainer = compose(
